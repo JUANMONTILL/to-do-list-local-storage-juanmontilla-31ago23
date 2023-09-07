@@ -2,7 +2,7 @@
   --main-color: #0b87ff;
   --poppin-font: 'Poppins', sans-serif;
   --box-shadow-properties: 0 1.25em 1.8em rgba(1, 24, 48, 0.15);
-  --berder-bottom-properties: 2px solid #d1d3d4;
+  --border-bottom-properties: 2px solid #d1d3d4;
 }
 
 * {
@@ -39,7 +39,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   border: none;
-  border-bottom: var(--berder-bottom-properties);
+  border-bottom: var(--border-bottom-properties);
   padding: 0.8em 0.5em;
   color: #111;
   font-weight: 500;
@@ -47,7 +47,7 @@ body {
 
 #new-task input:focus {
   outline: none;
-  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 
 #new-task button {
@@ -78,7 +78,7 @@ body {
   margin-top: 0.6em;
   display: flex;
   align-items: center;
-  border-bottom: var(--berder-bottom-properties);
+  border-bottom: var(--border-bottom-properties);
   cursor: pointer;
 }
 
@@ -104,9 +104,9 @@ body {
 .edit {
   background-color: var(--main-color);
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 3em;
 }
 
-.complete {
+.completed {
   text-decoration: line-through;
 }
